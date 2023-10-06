@@ -1,0 +1,56 @@
+2023-10-06 00:00:17.917 [INF] App server is starting.
+2023-10-06 00:00:51.841 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-06 00:00:51.844 [INF] HeartBeat
+2023-10-06 00:00:51.846 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-06 00:00:51.858 [WRN] Failed to determine the https port for redirect.
+2023-10-06 00:00:52.499 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-06 00:00:52.503 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-06 00:00:52.504 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-06 00:00:52.505 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-06 00:00:52.506 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-06 00:00:52.507 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-06 00:00:53.231 [INF] -------------Request-Begin------------
+2023-10-06 00:00:53.233 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100001,
+  "password": "fd234f234234234"
+}
+2023-10-06 00:00:53.234 [INF] 
+
+2023-10-06 00:00:53.235 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-06T00:05:53.2166564+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJDdXN0b21lck51bWJlciI6IjEwMDAwMSIsIlJvbGUiOiJhZG1pbiIsIkVtYWlsIjoibHVjeTFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJGdWxsTmFtZSI6Ikx1Y3kgMSBTZWxsZW4iLCJleHAiOjE2OTY1Mzk5NTMsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.e6GphbHkK5QPCVcxXpK69fNMJF8UMP2quwqQunlbR78","email":"lucy1@gmail.com","customerNumber":100001}}
+2023-10-06 00:00:53.236 [INF] -------------Request-End------------
+2023-10-06 00:01:21.565 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-06 00:01:21.569 [INF] HeartBeat
+2023-10-06 00:01:21.570 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-06 00:01:21.936 [INF] -------------Request-Begin------------
+2023-10-06 00:01:21.938 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/EftTransferContoller 
+QueryString:  
+Request Body: {
+  "fromAccountId": 2,
+  "toAccountId": 4,
+  "amount": 150,
+  "description": "i love you"
+}
+2023-10-06 00:01:21.940 [INF] 
+
+2023-10-06 00:01:21.940 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/EftTransferContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"accountId":0,"referenceNumber":"6c7c51c1d88d43e6a58ff125de7a53c4","receiverName":null,"receiverAddress":null,"receiverAddressType":null,"amount":150,"chargeAmount":0,"description":"i love you","transactionCode":"Eft","transactionDate":"2023-10-05T21:01:21.9314633Z","status":0,"accountName":null,"accountNumber":0,"customerNumber":0,"customerName":null}}
+2023-10-06 00:01:21.942 [INF] -------------Request-End------------

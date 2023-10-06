@@ -1,0 +1,1282 @@
+2023-10-01 10:54:18.967 [INF] App server is starting.
+2023-10-01 10:54:33.424 [INF] HeartBeat
+2023-10-01 10:54:33.437 [WRN] Failed to determine the https port for redirect.
+2023-10-01 10:55:02.882 [INF] HeartBeat
+2023-10-01 12:03:24.350 [INF] App server is starting.
+2023-10-01 12:03:24.900 [WRN] No XML encryptor configured. Key {c5d5114b-96d1-4058-8afe-fb56d65d7eab} may be persisted to storage in unencrypted form.
+2023-10-01 12:04:01.360 [INF] App server is starting.
+2023-10-01 12:14:43.377 [INF] App server is starting.
+2023-10-01 12:15:05.415 [INF] HeartBeat
+2023-10-01 12:15:19.768 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:15:45.140 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:15:45.158 [WRN] Failed to determine the https port for redirect.
+2023-10-01 12:15:59.173 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:15:59.174 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:15:59.174 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:15:59.175 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:15:59.175 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:15:59.175 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:16:02.999 [FTL] Path=/vk/api/v1/TokenContoller || Method=POST || Exception=The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+2023-10-01 12:16:03.038 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 3ee3d35c-47e8-4d1b-91fd-c98d29d0df73 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at VkApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/ErrorHandlerMiddleware.cs:line 34
+   at VkApi.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/HeartBeatMiddleware.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-01 12:16:03.551 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 3ee3d35c-47e8-4d1b-91fd-c98d29d0df73 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-01 12:16:03.553 [ERR] Connection id "0HMU2BRCVUF8O", Request id "0HMU2BRCVUF8O:00000003": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 3ee3d35c-47e8-4d1b-91fd-c98d29d0df73 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at VkApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/ErrorHandlerMiddleware.cs:line 34
+   at VkApi.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/HeartBeatMiddleware.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-10-01 12:16:48.096 [INF] HeartBeat
+2023-10-01 12:16:53.616 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:16:57.525 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:17:27.462 [FTL] Path=/vk/api/v1/TokenContoller || Method=POST || Exception=The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+2023-10-01 12:17:27.493 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e01fa054-1f16-4607-8bb5-e38bb446ddf8 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at VkApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/ErrorHandlerMiddleware.cs:line 34
+   at VkApi.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/HeartBeatMiddleware.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-01 12:17:27.504 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e01fa054-1f16-4607-8bb5-e38bb446ddf8 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-01 12:17:27.504 [ERR] Connection id "0HMU2BRCVUF8P", Request id "0HMU2BRCVUF8P:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id e01fa054-1f16-4607-8bb5-e38bb446ddf8 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at VkApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/ErrorHandlerMiddleware.cs:line 34
+   at VkApi.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/HeartBeatMiddleware.cs:line 26
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-10-01 12:19:41.933 [INF] App server is starting.
+2023-10-01 12:19:55.342 [INF] HeartBeat
+2023-10-01 12:20:06.960 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:20:12.855 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:20:45.447 [WRN] Failed to determine the https port for redirect.
+2023-10-01 12:20:50.587 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:20:50.588 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:20:50.588 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:20:50.588 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:20:50.588 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:20:50.588 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:20:58.302 [INF] -------------Request-Begin------------
+2023-10-01 12:20:58.302 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 14,
+  "password": "string"
+}
+2023-10-01 12:20:58.302 [INF] 
+
+2023-10-01 12:20:58.303 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-10-01 12:20:58.303 [INF] -------------Request-End------------
+2023-10-01 12:23:37.449 [INF] HeartBeat
+2023-10-01 12:23:37.451 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:23:37.451 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:24:04.821 [INF] -------------Request-Begin------------
+2023-10-01 12:24:04.823 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100001,
+  "password": "hello"
+}
+2023-10-01 12:24:04.824 [INF] 
+
+2023-10-01 12:24:04.824 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid user informations","response":null}
+2023-10-01 12:24:04.824 [INF] -------------Request-End------------
+2023-10-01 12:24:53.902 [INF] HeartBeat
+2023-10-01 12:24:53.904 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:24:53.904 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:28:17.666 [INF] -------------Request-Begin------------
+2023-10-01 12:28:17.667 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100001,
+  "password": "hello"
+}
+2023-10-01 12:28:17.667 [INF] 
+
+2023-10-01 12:28:17.667 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-01T12:33:01.897274+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJDdXN0b21lck51bWJlciI6IjEwMDAwMSIsIlJvbGUiOiJhZG1pbiIsIkVtYWlsIjoibHVjeTFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJGdWxsTmFtZSI6Ikx1Y3kgMSBTZWxsZW4iLCJleHAiOjE2OTYxNTI2NTYsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.sHD8pc6RVB-uJqU7IeRaxuWKnY_v4pT8MChwOKJ5mtM","email":"lucy1@gmail.com","customerNumber":100001}}
+2023-10-01 12:28:17.667 [INF] -------------Request-End------------
+2023-10-01 12:28:39.993 [INF] HeartBeat
+2023-10-01 12:28:39.994 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:28:39.994 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:28:44.467 [INF] -------------Request-Begin------------
+2023-10-01 12:28:44.467 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts 
+QueryString:  
+Request Body: 
+2023-10-01 12:28:44.467 [INF] 
+
+2023-10-01 12:28:44.467 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":1,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 1","accountNumber":687567,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":2,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 2","accountNumber":687568,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":3,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 3","accountNumber":687569,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":4,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 4","accountNumber":687570,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":5,"customerId":2,"customerName":"Lucy 2 Sellen","name":"Lucy2 Account 1","accountNumber":857123,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":6,"customerId":2,"customerName":"Lucy 2 Sellen","name":"Lucy2 Account 2","accountNumber":857124,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":7,"customerId":3,"customerName":"Lucy 3 Sellen","name":"Lucy3 Account 1","accountNumber":857125,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":8,"customerId":3,"customerName":"Lucy 3 Sellen","name":"Lucy3 Account 2","accountNumber":857126,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]}]}
+2023-10-01 12:28:44.467 [INF] -------------Request-End------------
+2023-10-01 12:30:36.232 [INF] App server is starting.
+2023-10-01 12:31:27.596 [INF] HeartBeat
+2023-10-01 12:31:27.601 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:31:27.604 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:31:27.621 [WRN] Failed to determine the https port for redirect.
+2023-10-01 12:31:27.698 [INF] -------------Request-Begin------------
+2023-10-01 12:31:27.698 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts 
+QueryString:  
+Request Body: 
+2023-10-01 12:31:27.698 [INF] 
+
+2023-10-01 12:31:27.698 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-10-01 12:31:27.698 [INF] -------------Request-End------------
+2023-10-01 12:31:43.403 [INF] HeartBeat
+2023-10-01 12:31:43.403 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:31:43.403 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:31:43.406 [INF] -------------Request-Begin------------
+2023-10-01 12:31:43.406 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Customers/1 
+QueryString:  
+Request Body: 
+2023-10-01 12:31:43.406 [INF] 
+
+2023-10-01 12:31:43.406 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Customers/1 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-10-01 12:31:43.406 [INF] -------------Request-End------------
+2023-10-01 12:32:02.114 [INF] HeartBeat
+2023-10-01 12:32:02.116 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:32:02.116 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:32:08.495 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:32:08.496 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:32:08.496 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:32:08.496 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:32:08.496 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:32:08.496 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:32:14.695 [INF] -------------Request-Begin------------
+2023-10-01 12:32:14.695 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100001,
+  "password": "hello"
+}
+2023-10-01 12:32:14.696 [INF] 
+
+2023-10-01 12:32:14.696 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-01T12:37:14.673523+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJDdXN0b21lck51bWJlciI6IjEwMDAwMSIsIlJvbGUiOiJhZG1pbiIsIkVtYWlsIjoibHVjeTFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJGdWxsTmFtZSI6Ikx1Y3kgMSBTZWxsZW4iLCJleHAiOjE2OTYxNTMwMzQsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.M1heVcgwnTzP9INjqymIp-F900qqW9xfNAdy_4IUp9M","email":"lucy1@gmail.com","customerNumber":100001}}
+2023-10-01 12:32:14.696 [INF] -------------Request-End------------
+2023-10-01 12:32:52.744 [INF] HeartBeat
+2023-10-01 12:32:52.745 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:32:52.745 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:32:52.960 [INF] -------------Request-Begin------------
+2023-10-01 12:32:52.961 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts 
+QueryString:  
+Request Body: 
+2023-10-01 12:32:52.961 [INF] 
+
+2023-10-01 12:32:52.961 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":1,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 1","accountNumber":687567,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":2,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 2","accountNumber":687568,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":3,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 3","accountNumber":687569,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":4,"customerId":1,"customerName":"Lucy 1 Sellen","name":"Lucy1 Account 4","accountNumber":687570,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":5,"customerId":2,"customerName":"Lucy 2 Sellen","name":"Lucy2 Account 1","accountNumber":857123,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":6,"customerId":2,"customerName":"Lucy 2 Sellen","name":"Lucy2 Account 2","accountNumber":857124,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":7,"customerId":3,"customerName":"Lucy 3 Sellen","name":"Lucy3 Account 1","accountNumber":857125,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":8,"customerId":3,"customerName":"Lucy 3 Sellen","name":"Lucy3 Account 2","accountNumber":857126,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]}]}
+2023-10-01 12:32:52.961 [INF] -------------Request-End------------
+2023-10-01 12:35:28.641 [INF] App server is starting.
+2023-10-01 12:36:37.188 [INF] HeartBeat
+2023-10-01 12:36:37.193 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:36:37.194 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:36:37.208 [WRN] Failed to determine the https port for redirect.
+2023-10-01 12:36:37.305 [INF] -------------Request-Begin------------
+2023-10-01 12:36:37.305 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/NoToken 
+QueryString:  
+Request Body: 
+2023-10-01 12:36:37.305 [INF] 
+
+2023-10-01 12:36:37.305 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/NoToken 
+QueryString:  
+StatusCode: 200 
+Response Body: NoToken
+2023-10-01 12:36:37.305 [INF] -------------Request-End------------
+2023-10-01 12:37:01.285 [INF] HeartBeat
+2023-10-01 12:37:01.290 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:01.290 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:01.304 [INF] -------------Request-Begin------------
+2023-10-01 12:37:01.304 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:01.304 [INF] 
+
+2023-10-01 12:37:01.304 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-10-01 12:37:01.304 [INF] -------------Request-End------------
+2023-10-01 12:37:25.839 [INF] HeartBeat
+2023-10-01 12:37:25.840 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:25.843 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:26.613 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:37:26.615 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:37:26.615 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:37:26.615 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:37:26.615 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:37:26.615 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 12:37:27.515 [INF] -------------Request-Begin------------
+2023-10-01 12:37:27.516 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100001,
+  "password": "hello"
+}
+2023-10-01 12:37:27.516 [INF] 
+
+2023-10-01 12:37:27.516 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-01T12:42:27.495501+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJDdXN0b21lck51bWJlciI6IjEwMDAwMSIsIlJvbGUiOiJhZG1pbiIsIkVtYWlsIjoibHVjeTFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJGdWxsTmFtZSI6Ikx1Y3kgMSBTZWxsZW4iLCJleHAiOjE2OTYxNTMzNDcsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.3L0Kp-eZkuCv13LIrnG2fAxDq_bdcAA3UYMUmrDf1uI","email":"lucy1@gmail.com","customerNumber":100001}}
+2023-10-01 12:37:27.516 [INF] -------------Request-End------------
+2023-10-01 12:37:48.006 [INF] HeartBeat
+2023-10-01 12:37:48.007 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:48.007 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:48.073 [INF] -------------Request-Begin------------
+2023-10-01 12:37:48.073 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:48.073 [INF] 
+
+2023-10-01 12:37:48.073 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:48.073 [INF] -------------Request-End------------
+2023-10-01 12:37:49.441 [INF] HeartBeat
+2023-10-01 12:37:49.441 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:49.441 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:49.445 [INF] -------------Request-Begin------------
+2023-10-01 12:37:49.445 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:49.445 [INF] 
+
+2023-10-01 12:37:49.445 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:49.445 [INF] -------------Request-End------------
+2023-10-01 12:37:49.960 [INF] HeartBeat
+2023-10-01 12:37:49.961 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:49.961 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:49.962 [INF] -------------Request-Begin------------
+2023-10-01 12:37:49.962 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:49.962 [INF] 
+
+2023-10-01 12:37:49.962 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:49.962 [INF] -------------Request-End------------
+2023-10-01 12:37:50.301 [INF] HeartBeat
+2023-10-01 12:37:50.302 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:50.302 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:50.303 [INF] -------------Request-Begin------------
+2023-10-01 12:37:50.304 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:50.304 [INF] 
+
+2023-10-01 12:37:50.304 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:50.304 [INF] -------------Request-End------------
+2023-10-01 12:37:50.672 [INF] HeartBeat
+2023-10-01 12:37:50.673 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:50.673 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:50.677 [INF] -------------Request-Begin------------
+2023-10-01 12:37:50.677 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:50.677 [INF] 
+
+2023-10-01 12:37:50.677 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:50.677 [INF] -------------Request-End------------
+2023-10-01 12:37:50.874 [INF] HeartBeat
+2023-10-01 12:37:50.874 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:50.874 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:50.874 [INF] -------------Request-Begin------------
+2023-10-01 12:37:50.874 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:50.874 [INF] 
+
+2023-10-01 12:37:50.874 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:50.874 [INF] -------------Request-End------------
+2023-10-01 12:37:51.028 [INF] HeartBeat
+2023-10-01 12:37:51.028 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:51.028 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:51.030 [INF] -------------Request-Begin------------
+2023-10-01 12:37:51.030 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:51.030 [INF] 
+
+2023-10-01 12:37:51.030 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:51.031 [INF] -------------Request-End------------
+2023-10-01 12:37:51.207 [INF] HeartBeat
+2023-10-01 12:37:51.208 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:51.208 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:51.209 [INF] -------------Request-Begin------------
+2023-10-01 12:37:51.209 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:51.209 [INF] 
+
+2023-10-01 12:37:51.210 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:51.210 [INF] -------------Request-End------------
+2023-10-01 12:37:51.404 [INF] HeartBeat
+2023-10-01 12:37:51.404 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:51.404 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:51.405 [INF] -------------Request-Begin------------
+2023-10-01 12:37:51.405 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:51.405 [INF] 
+
+2023-10-01 12:37:51.405 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:51.405 [INF] -------------Request-End------------
+2023-10-01 12:37:51.598 [INF] HeartBeat
+2023-10-01 12:37:51.598 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:51.598 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:51.600 [INF] -------------Request-Begin------------
+2023-10-01 12:37:51.600 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:51.600 [INF] 
+
+2023-10-01 12:37:51.600 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:51.600 [INF] -------------Request-End------------
+2023-10-01 12:37:52.019 [INF] HeartBeat
+2023-10-01 12:37:52.019 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:52.019 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:52.021 [INF] -------------Request-Begin------------
+2023-10-01 12:37:52.021 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:52.021 [INF] 
+
+2023-10-01 12:37:52.021 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:52.021 [INF] -------------Request-End------------
+2023-10-01 12:37:52.235 [INF] HeartBeat
+2023-10-01 12:37:52.235 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:52.236 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:52.237 [INF] -------------Request-Begin------------
+2023-10-01 12:37:52.237 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:52.237 [INF] 
+
+2023-10-01 12:37:52.237 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:52.237 [INF] -------------Request-End------------
+2023-10-01 12:37:52.412 [INF] HeartBeat
+2023-10-01 12:37:52.412 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:52.412 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:52.414 [INF] -------------Request-Begin------------
+2023-10-01 12:37:52.415 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:52.415 [INF] 
+
+2023-10-01 12:37:52.417 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:52.417 [INF] -------------Request-End------------
+2023-10-01 12:37:52.606 [INF] HeartBeat
+2023-10-01 12:37:52.606 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:52.606 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:52.607 [INF] -------------Request-Begin------------
+2023-10-01 12:37:52.608 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:52.608 [INF] 
+
+2023-10-01 12:37:52.608 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:52.608 [INF] -------------Request-End------------
+2023-10-01 12:37:52.817 [INF] HeartBeat
+2023-10-01 12:37:52.817 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:37:52.817 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:37:52.819 [INF] -------------Request-Begin------------
+2023-10-01 12:37:52.819 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+Request Body: 
+2023-10-01 12:37:52.819 [INF] 
+
+2023-10-01 12:37:52.819 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Authorize 
+QueryString:  
+StatusCode: 200 
+Response Body: Authorize
+2023-10-01 12:37:52.819 [INF] -------------Request-End------------
+2023-10-01 12:39:19.110 [INF] HeartBeat
+2023-10-01 12:39:19.115 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:39:19.115 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:39:19.123 [INF] -------------Request-Begin------------
+2023-10-01 12:39:19.123 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Admin 
+QueryString:  
+Request Body: 
+2023-10-01 12:39:19.123 [INF] 
+
+2023-10-01 12:39:19.123 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Admin 
+QueryString:  
+StatusCode: 200 
+Response Body: Admin
+2023-10-01 12:39:19.123 [INF] -------------Request-End------------
+2023-10-01 12:39:58.707 [INF] HeartBeat
+2023-10-01 12:39:58.708 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:39:58.708 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:39:58.713 [INF] -------------Request-Begin------------
+2023-10-01 12:39:58.713 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Viewer 
+QueryString:  
+Request Body: 
+2023-10-01 12:39:58.713 [INF] 
+
+2023-10-01 12:39:58.713 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/Viewer 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-10-01 12:39:58.713 [INF] -------------Request-End------------
+2023-10-01 12:40:44.363 [INF] HeartBeat
+2023-10-01 12:40:44.364 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 12:40:44.364 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 12:40:44.368 [INF] -------------Request-Begin------------
+2023-10-01 12:40:44.368 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/ViewerAdmin 
+QueryString:  
+Request Body: 
+2023-10-01 12:40:44.368 [INF] 
+
+2023-10-01 12:40:44.368 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenTest/ViewerAdmin 
+QueryString:  
+StatusCode: 200 
+Response Body: ViewerAdmin
+2023-10-01 12:40:44.368 [INF] -------------Request-End------------
+2023-10-01 13:48:03.587 [INF] App server is starting.
+2023-10-01 13:48:39.477 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:48:39.481 [INF] HeartBeat
+2023-10-01 13:48:39.481 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:48:39.493 [WRN] Failed to determine the https port for redirect.
+2023-10-01 13:48:39.565 [INF] -------------Request-Begin------------
+2023-10-01 13:48:39.566 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/1 
+QueryString:  
+Request Body: 
+2023-10-01 13:48:39.566 [INF] 
+
+2023-10-01 13:48:39.566 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/1 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-10-01 13:48:39.566 [INF] -------------Request-End------------
+2023-10-01 13:48:54.776 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:48:54.776 [INF] HeartBeat
+2023-10-01 13:48:54.776 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:48:55.537 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:48:55.539 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:48:55.539 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:48:55.539 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:48:55.539 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:48:55.539 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:48:56.439 [INF] -------------Request-Begin------------
+2023-10-01 13:48:56.439 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100001,
+  "password": "hello"
+}
+2023-10-01 13:48:56.439 [INF] 
+
+2023-10-01 13:48:56.439 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-01T13:53:56.417339+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJDdXN0b21lck51bWJlciI6IjEwMDAwMSIsIlJvbGUiOiJhZG1pbiIsIkVtYWlsIjoibHVjeTFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJGdWxsTmFtZSI6Ikx1Y3kgMSBTZWxsZW4iLCJleHAiOjE2OTYxNTc2MzYsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.CsZzhA6iwumNn_bdZfW1qt3L6HGjSHumzLd8jre0r7w","email":"lucy1@gmail.com","customerNumber":100001}}
+2023-10-01 13:48:56.439 [INF] -------------Request-End------------
+2023-10-01 13:49:12.931 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:49:12.931 [INF] HeartBeat
+2023-10-01 13:49:12.931 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:49:13.103 [INF] -------------Request-Begin------------
+2023-10-01 13:49:13.104 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/100001 
+QueryString:  
+Request Body: 
+2023-10-01 13:49:13.104 [INF] 
+
+2023-10-01 13:49:13.104 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/100001 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":1,"customerId":1,"customerName":null,"name":"Lucy1 Account 1","accountNumber":687567,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":2,"customerId":1,"customerName":null,"name":"Lucy1 Account 2","accountNumber":687568,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":3,"customerId":1,"customerName":null,"name":"Lucy1 Account 3","accountNumber":687569,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":4,"customerId":1,"customerName":null,"name":"Lucy1 Account 4","accountNumber":687570,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":5,"customerId":2,"customerName":null,"name":"Lucy2 Account 1","accountNumber":857123,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":6,"customerId":2,"customerName":null,"name":"Lucy2 Account 2","accountNumber":857124,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":7,"customerId":3,"customerName":null,"name":"Lucy3 Account 1","accountNumber":857125,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":8,"customerId":3,"customerName":null,"name":"Lucy3 Account 2","accountNumber":857126,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]}]}
+2023-10-01 13:49:13.104 [INF] -------------Request-End------------
+2023-10-01 13:50:15.489 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:50:15.491 [INF] HeartBeat
+2023-10-01 13:50:15.491 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:51:03.178 [INF] -------------Request-Begin------------
+2023-10-01 13:51:03.206 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/100001 
+QueryString:  
+Request Body: 
+2023-10-01 13:51:03.206 [INF] 
+
+2023-10-01 13:51:03.209 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/100001 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":1,"customerId":1,"customerName":null,"name":"Lucy1 Account 1","accountNumber":687567,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":2,"customerId":1,"customerName":null,"name":"Lucy1 Account 2","accountNumber":687568,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":3,"customerId":1,"customerName":null,"name":"Lucy1 Account 3","accountNumber":687569,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":4,"customerId":1,"customerName":null,"name":"Lucy1 Account 4","accountNumber":687570,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":5,"customerId":2,"customerName":null,"name":"Lucy2 Account 1","accountNumber":857123,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":6,"customerId":2,"customerName":null,"name":"Lucy2 Account 2","accountNumber":857124,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":7,"customerId":3,"customerName":null,"name":"Lucy3 Account 1","accountNumber":857125,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":8,"customerId":3,"customerName":null,"name":"Lucy3 Account 2","accountNumber":857126,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]}]}
+2023-10-01 13:51:03.209 [INF] -------------Request-End------------
+2023-10-01 13:51:06.120 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:51:06.121 [INF] HeartBeat
+2023-10-01 13:51:06.121 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:54:22.313 [INF] App server is starting.
+2023-10-01 13:54:39.411 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:54:39.420 [INF] HeartBeat
+2023-10-01 13:54:39.423 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:54:39.443 [WRN] Failed to determine the https port for redirect.
+2023-10-01 13:54:40.260 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:54:40.261 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:54:40.261 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:54:40.261 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:54:40.261 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:54:40.262 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:54:41.183 [INF] -------------Request-Begin------------
+2023-10-01 13:54:41.183 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100001,
+  "password": "hello"
+}
+2023-10-01 13:54:41.183 [INF] 
+
+2023-10-01 13:54:41.183 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-01T13:59:41.158563+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjEiLCJDdXN0b21lck51bWJlciI6IjEwMDAwMSIsIlJvbGUiOiJhZG1pbiIsIkVtYWlsIjoibHVjeTFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiYWRtaW4iLCJGdWxsTmFtZSI6Ikx1Y3kgMSBTZWxsZW4iLCJleHAiOjE2OTYxNTc5ODEsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.fvvEpIwvHbu0c-XF14ReGSpBl0wE8UfT0xWcVfadhBI","email":"lucy1@gmail.com","customerNumber":100001}}
+2023-10-01 13:54:41.183 [INF] -------------Request-End------------
+2023-10-01 13:55:00.862 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:55:00.862 [INF] HeartBeat
+2023-10-01 13:55:00.862 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:55:10.372 [INF] -------------Request-Begin------------
+2023-10-01 13:55:10.372 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/1 
+QueryString:  
+Request Body: 
+2023-10-01 13:55:10.372 [INF] 
+
+2023-10-01 13:55:10.372 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":1,"customerId":1,"customerName":null,"name":"Lucy1 Account 1","accountNumber":687567,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":2,"customerId":1,"customerName":null,"name":"Lucy1 Account 2","accountNumber":687568,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":3,"customerId":1,"customerName":null,"name":"Lucy1 Account 3","accountNumber":687569,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]},{"id":4,"customerId":1,"customerName":null,"name":"Lucy1 Account 4","accountNumber":687570,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]}]}
+2023-10-01 13:55:10.372 [INF] -------------Request-End------------
+2023-10-01 13:55:51.795 [INF] App server is starting.
+2023-10-01 13:56:15.863 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:56:15.871 [INF] HeartBeat
+2023-10-01 13:56:15.873 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:56:15.890 [WRN] Failed to determine the https port for redirect.
+2023-10-01 13:56:16.102 [INF] -------------Request-Begin------------
+2023-10-01 13:56:16.102 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+Request Body: 
+2023-10-01 13:56:16.102 [INF] 
+
+2023-10-01 13:56:16.102 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-10-01 13:56:16.102 [INF] -------------Request-End------------
+2023-10-01 13:57:15.160 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:57:15.164 [INF] HeartBeat
+2023-10-01 13:57:15.164 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:57:15.918 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:57:15.919 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:57:15.919 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:57:15.919 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:57:15.919 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:57:15.919 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 13:57:16.729 [INF] -------------Request-Begin------------
+2023-10-01 13:57:16.729 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100004,
+  "password": "hello"
+}
+2023-10-01 13:57:16.729 [INF] 
+
+2023-10-01 13:57:16.729 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-01T14:02:16.707218+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJDdXN0b21lck51bWJlciI6IjEwMDAwNCIsIlJvbGUiOiJjdXN0b21lciIsIkVtYWlsIjoibHVjeTRAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiY3VzdG9tZXIiLCJGdWxsTmFtZSI6Ikx1Y3kgNCBTZWxsZW4iLCJleHAiOjE2OTYxNTgxMzYsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.SDjJb3rUegmSMogYE7X19SxFX14N3KwdZW6xJWsXWDk","email":"lucy4@gmail.com","customerNumber":100004}}
+2023-10-01 13:57:16.729 [INF] -------------Request-End------------
+2023-10-01 13:57:43.617 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 13:57:43.624 [INF] HeartBeat
+2023-10-01 13:57:43.625 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 13:59:51.841 [INF] -------------Request-Begin------------
+2023-10-01 13:59:51.842 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+Request Body: 
+2023-10-01 13:59:51.842 [INF] 
+
+2023-10-01 13:59:51.842 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":8,"customerId":4,"customerName":"Lucy 4 Sellen","name":"Lucy3 Account 2","accountNumber":857126,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]}]}
+2023-10-01 13:59:51.842 [INF] -------------Request-End------------
+2023-10-01 14:00:21.773 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:00:21.779 [INF] HeartBeat
+2023-10-01 14:00:21.779 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:00:21.821 [INF] -------------Request-Begin------------
+2023-10-01 14:00:21.821 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/4 
+QueryString:  
+Request Body: 
+2023-10-01 14:00:21.821 [INF] 
+
+2023-10-01 14:00:21.821 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/4 
+QueryString:  
+StatusCode: 403 
+Response Body: 
+2023-10-01 14:00:21.821 [INF] -------------Request-End------------
+2023-10-01 14:00:43.978 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:00:43.979 [INF] HeartBeat
+2023-10-01 14:00:43.979 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:00:43.993 [INF] -------------Request-Begin------------
+2023-10-01 14:00:43.993 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/4 
+QueryString:  
+Request Body: 
+2023-10-01 14:00:43.993 [INF] 
+
+2023-10-01 14:00:43.993 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/Accounts/ByCustomerId/4 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-10-01 14:00:43.993 [INF] -------------Request-End------------
+2023-10-01 14:00:51.450 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:00:51.451 [INF] HeartBeat
+2023-10-01 14:00:51.451 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:00:51.452 [INF] -------------Request-Begin------------
+2023-10-01 14:00:51.452 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+Request Body: 
+2023-10-01 14:00:51.452 [INF] 
+
+2023-10-01 14:00:51.452 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+StatusCode: 401 
+Response Body: 
+2023-10-01 14:00:51.452 [INF] -------------Request-End------------
+2023-10-01 14:01:15.371 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:01:15.373 [INF] HeartBeat
+2023-10-01 14:01:15.373 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:01:15.480 [INF] -------------Request-Begin------------
+2023-10-01 14:01:15.480 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+Request Body: {
+  "customerNumber": 100004,
+  "password": "Hello"
+}
+2023-10-01 14:01:15.480 [INF] 
+
+2023-10-01 14:01:15.480 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/TokenContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"expireDate":"2023-10-01T14:06:15.479395+03:00","token":"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjQiLCJDdXN0b21lck51bWJlciI6IjEwMDAwNCIsIlJvbGUiOiJjdXN0b21lciIsIkVtYWlsIjoibHVjeTRAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiY3VzdG9tZXIiLCJGdWxsTmFtZSI6Ikx1Y3kgNCBTZWxsZW4iLCJleHAiOjE2OTYxNTgzNzUsImlzcyI6IlZrQXBpIiwiYXVkIjoiVmtBcGkifQ.mAPfuwYLGs2HQwZ4Unm2vS8ZgR5-Wg3jpcrRRkVBJP4","email":"lucy4@gmail.com","customerNumber":100004}}
+2023-10-01 14:01:15.481 [INF] -------------Request-End------------
+2023-10-01 14:01:42.451 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:01:42.455 [INF] HeartBeat
+2023-10-01 14:01:42.455 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:01:50.343 [INF] -------------Request-Begin------------
+2023-10-01 14:01:50.344 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+Request Body: 
+2023-10-01 14:01:50.344 [INF] 
+
+2023-10-01 14:01:50.344 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/CustomerServiceContoller/GetCustomerAccounts 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"id":8,"customerId":4,"customerName":"Lucy 4 Sellen","name":"Lucy3 Account 2","accountNumber":857126,"iban":"TR3460000634630000046346","balance":500.00,"currencyCode":"TRY","openDate":"2023-05-05T00:00:00","closeDate":null,"cardId":null,"eftTransactions":[],"accountTransactions":[]}]}
+2023-10-01 14:01:50.344 [INF] -------------Request-End------------
+2023-10-01 14:57:19.954 [INF] App server is starting.
+2023-10-01 14:58:33.099 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:58:33.104 [INF] HeartBeat
+2023-10-01 14:58:33.105 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:58:33.129 [WRN] Failed to determine the https port for redirect.
+2023-10-01 14:58:33.284 [INF] -------------Request-Begin------------
+2023-10-01 14:58:33.286 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller 
+QueryString:  
+Request Body: {
+  "fromAccountId": 687567,
+  "toAccountId": 687568,
+  "amount": 150,
+  "description": "deneme1"
+}
+2023-10-01 14:58:33.286 [INF] 
+
+2023-10-01 14:58:33.286 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller 
+QueryString:  
+StatusCode: 400 
+Response Body: {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"One or more validation errors occurred.","status":400,"traceId":"00-35db15bbbf884ccbb78b56575181a5b4-8f3521f6729fac6f-00","errors":{"Description":["Description is required."]}}
+2023-10-01 14:58:33.286 [INF] -------------Request-End------------
+2023-10-01 14:58:43.066 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:58:43.066 [INF] HeartBeat
+2023-10-01 14:58:43.066 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:58:49.949 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:58:49.951 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:58:49.951 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:58:49.951 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:58:49.951 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:58:49.951 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:59:41.664 [INF] App server is starting.
+2023-10-01 14:59:45.750 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 14:59:45.759 [INF] HeartBeat
+2023-10-01 14:59:45.760 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 14:59:45.776 [WRN] Failed to determine the https port for redirect.
+2023-10-01 14:59:49.380 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:59:49.381 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:59:49.381 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:59:49.381 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:59:49.381 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 14:59:49.381 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:00:14.041 [INF] -------------Request-Begin------------
+2023-10-01 15:00:14.042 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller 
+QueryString:  
+Request Body: {
+  "fromAccountId": 687567,
+  "toAccountId": 687568,
+  "amount": 150,
+  "description": "asjdbakjsdhbaskbdsakjbdsakj"
+}
+2023-10-01 15:00:14.042 [INF] 
+
+2023-10-01 15:00:14.042 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Invalid Account","response":null}
+2023-10-01 15:00:14.042 [INF] -------------Request-End------------
+2023-10-01 15:00:23.671 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 15:00:23.672 [INF] HeartBeat
+2023-10-01 15:00:23.672 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 15:01:23.648 [FTL] Path=/vk/api/v1/MoneyTransferContoller || Method=POST || Exception=startIndex cannot be larger than length of string. (Parameter 'startIndex')
+2023-10-01 15:01:23.752 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 183bf047-b48f-4602-970d-f66912184c3a and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at VkApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/ErrorHandlerMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-01 15:01:23.806 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 183bf047-b48f-4602-970d-f66912184c3a and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.DisplayExceptionContent(ErrorContext errorContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-01 15:01:23.809 [ERR] Connection id "0HMU2ENIU2AN6", Request id "0HMU2ENIU2AN6:00000001": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 183bf047-b48f-4602-970d-f66912184c3a and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.GetTaskForValueTaskSource(IValueTaskSource`1 t)
+--- End of stack trace from previous location ---
+   at VkApi.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in /Users/recep/Ptk/pk-vkf/VkApi/VkApi/Middleware/ErrorHandlerMiddleware.cs:line 33
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-10-01 15:02:07.235 [INF] App server is starting.
+2023-10-01 15:02:12.314 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 15:02:12.317 [INF] HeartBeat
+2023-10-01 15:02:12.318 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 15:02:12.337 [WRN] Failed to determine the https port for redirect.
+2023-10-01 15:02:14.933 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:02:14.935 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:02:14.935 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:02:14.935 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:02:14.935 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:02:14.935 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:04:02.207 [INF] App server is starting.
+2023-10-01 15:04:05.912 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 15:04:05.918 [INF] HeartBeat
+2023-10-01 15:04:05.920 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 15:04:05.938 [WRN] Failed to determine the https port for redirect.
+2023-10-01 15:05:48.316 [INF] App server is starting.
+2023-10-01 15:06:12.708 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 15:06:12.714 [INF] HeartBeat
+2023-10-01 15:06:12.717 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 15:06:12.741 [WRN] Failed to determine the https port for redirect.
+2023-10-01 15:06:21.238 [WRN] The 'bool' property 'IsActive' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:06:21.240 [WRN] The 'bool' property 'IsActive' on entity type 'AccountTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:06:21.240 [WRN] The 'bool' property 'IsActive' on entity type 'Address' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:06:21.240 [WRN] The 'bool' property 'IsActive' on entity type 'Card' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:06:21.240 [WRN] The 'bool' property 'IsActive' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:06:21.240 [WRN] The 'bool' property 'IsActive' on entity type 'EftTransaction' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-10-01 15:06:42.636 [INF] -------------Request-Begin------------
+2023-10-01 15:06:42.637 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller 
+QueryString:  
+Request Body: {
+  "fromAccountId": 1,
+  "toAccountId": 2,
+  "amount": 50,
+  "description": "striwerwerwerwerwerwerwerng"
+}
+2023-10-01 15:06:42.637 [INF] 
+
+2023-10-01 15:06:42.637 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"fromAccountId":1,"toAccountId":2,"amount":50,"description":"striwerwerwerwerwerwerwerng","referenceNumber":"713e3e35ec84448e8f6340f055631fd6","transactionDate":"2023-10-01T12:06:40.445485Z","transactionCode":"Virement"}}
+2023-10-01 15:06:42.637 [INF] -------------Request-End------------
+2023-10-01 15:06:55.781 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 15:06:55.781 [INF] HeartBeat
+2023-10-01 15:06:55.781 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 15:06:56.004 [INF] -------------Request-Begin------------
+2023-10-01 15:06:56.004 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller/ByReferenceNumber/713e3e35ec84448e8f6340f055631fd6 
+QueryString:  
+Request Body: 
+2023-10-01 15:06:56.005 [INF] 
+
+2023-10-01 15:06:56.005 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller/ByReferenceNumber/713e3e35ec84448e8f6340f055631fd6 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"referenceNumber":"713e3e35ec84448e8f6340f055631fd6","debitAmount":0.00,"creditAmount":50.00,"description":"striwerwerwerwerwerwerwerng","transactionDate":"2023-10-01T12:06:26.965016","transactionCode":"Virement","accountName":"Lucy1 Account 1","accountNumber":687567,"customerNumber":100001,"customerName":"Lucy 1 Sellen"},{"accountId":2,"referenceNumber":"713e3e35ec84448e8f6340f055631fd6","debitAmount":50.00,"creditAmount":0.00,"description":"striwerwerwerwerwerwerwerng","transactionDate":"2023-10-01T12:06:28.81069","transactionCode":"Virement","accountName":"Lucy1 Account 2","accountNumber":687568,"customerNumber":100001,"customerName":"Lucy 1 Sellen"}]}
+2023-10-01 15:06:56.005 [INF] -------------Request-End------------
+2023-10-01 15:07:15.252 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 15:07:15.252 [INF] HeartBeat
+2023-10-01 15:07:15.252 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 15:07:15.300 [INF] -------------Request-Begin------------
+2023-10-01 15:07:15.301 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller/ByAccountId/1 
+QueryString:  
+Request Body: 
+2023-10-01 15:07:15.301 [INF] 
+
+2023-10-01 15:07:15.301 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller/ByAccountId/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"referenceNumber":"713e3e35ec84448e8f6340f055631fd6","debitAmount":0.00,"creditAmount":50.00,"description":"striwerwerwerwerwerwerwerng","transactionDate":"2023-10-01T12:06:26.965016","transactionCode":"Virement","accountName":"Lucy1 Account 1","accountNumber":687567,"customerNumber":100001,"customerName":"Lucy 1 Sellen"}]}
+2023-10-01 15:07:15.301 [INF] -------------Request-End------------
+2023-10-01 15:07:22.883 [INF] LogErrorHandlerMiddleware.Invoke
+2023-10-01 15:07:22.884 [INF] HeartBeat
+2023-10-01 15:07:22.884 [INF] LogRequestLoggingMiddleware.Invoke
+2023-10-01 15:07:22.940 [INF] -------------Request-Begin------------
+2023-10-01 15:07:22.940 [INF] Http Request Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller/ByAccountId/2 
+QueryString:  
+Request Body: 
+2023-10-01 15:07:22.940 [INF] 
+
+2023-10-01 15:07:22.941 [INF] Http Response Information: 
+Schema:http 
+Host: localhost:5237 
+Path: /vk/api/v1/MoneyTransferContoller/ByAccountId/2 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":2,"referenceNumber":"713e3e35ec84448e8f6340f055631fd6","debitAmount":50.00,"creditAmount":0.00,"description":"striwerwerwerwerwerwerwerng","transactionDate":"2023-10-01T12:06:28.81069","transactionCode":"Virement","accountName":"Lucy1 Account 2","accountNumber":687568,"customerNumber":100001,"customerName":"Lucy 1 Sellen"}]}
+2023-10-01 15:07:22.941 [INF] -------------Request-End------------

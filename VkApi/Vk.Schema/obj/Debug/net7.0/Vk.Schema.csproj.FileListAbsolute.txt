@@ -1,0 +1,12 @@
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\bin\Debug\net7.0\Vk.Schema.deps.json
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\bin\Debug\net7.0\Vk.Schema.dll
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\bin\Debug\net7.0\Vk.Schema.pdb
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\Vk.Schema.csproj.AssemblyReference.cache
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\Vk.Schema.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\Vk.Schema.AssemblyInfoInputs.cache
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\Vk.Schema.AssemblyInfo.cs
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\Vk.Schema.csproj.CoreCompileInputs.cache
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\Vk.Schema.dll
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\refint\Vk.Schema.dll
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\Vk.Schema.pdb
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Schema\obj\Debug\net7.0\ref\Vk.Schema.dll

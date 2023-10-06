@@ -1,0 +1,17 @@
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\bin\Debug\net7.0\Vk.Data.deps.json
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\bin\Debug\net7.0\Vk.Data.runtimeconfig.json
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\bin\Debug\net7.0\Vk.Data.dll
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\bin\Debug\net7.0\Vk.Data.pdb
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\bin\Debug\net7.0\Vk.Base.dll
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\bin\Debug\net7.0\Vk.Base.pdb
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.csproj.AssemblyReference.cache
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.AssemblyInfoInputs.cache
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.AssemblyInfo.cs
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.csproj.CoreCompileInputs.cache
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.csproj.CopyComplete
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.dll
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\refint\Vk.Data.dll
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.pdb
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\Vk.Data.genruntimeconfig.cache
+C:\Users\AYLIN\Desktop\pk-vkf\VkApi\Vk.Data\obj\Debug\net7.0\ref\Vk.Data.dll
